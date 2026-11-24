@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Education | Hativagone Tadiwanashe</title>
+  <style>
+    :root {
+      --paper: #f3f0e8;
+      --ink: #1d2a2f;
+      --muted: #5d6b70;
+      --accent: #2f6f6a;
+      --line: #cfc9ba;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    a { color: var(--accent); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    .wrap { max-width: 680px; margin: 0 auto; padding: 0 1.5rem; }
+
+    nav { padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+    nav .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    nav a { text-decoration: none; }
+
+    header { padding: 4rem 0 2rem; }
+    h1 { font-size: clamp(2.2rem, 7vw, 3.4rem); line-height: 1.1; margin: 0 0 0.75rem; letter-spacing: -0.02em; }
+    .intro { color: var(--muted); margin: 0; }
+
+    /* Timeline: the vertical line shows the order from secondary to university */
+    .timeline { border-left: 2px solid var(--line); margin: 1rem 0 3rem 0.5rem; padding-left: 1.75rem; }
+    .entry { position: relative; padding: 1.25rem 0; }
+    .entry::before {
+      content: ""; position: absolute; left: calc(-1.75rem - 7px); top: 1.9rem;
+      width: 12px; height: 12px; border-radius: 50%;
+      background: var(--paper); border: 2px solid var(--accent);
+    }
+    .entry.current::before { background: var(--accent); }
+    .years { color: var(--muted); font-size: 0.95rem; margin: 0; }
+    .entry h2 { font-size: 1.3rem; margin: 0.1rem 0 0; }
+    .school { margin: 0; color: var(--accent); }
+    .entry p.detail { margin: 0.4rem 0 0; }
+
+    /* Results tables */
+    .table-scroll { overflow-x: auto; margin-top: 0.75rem; }
+    table.grades { border-collapse: collapse; width: 100%; max-width: 420px; font-size: 1rem; }
+    .grades caption { text-align: left; color: var(--muted); font-size: 0.9rem; padding-bottom: 0.4rem; }
+    .grades th, .grades td { text-align: left; padding: 0.45rem 0.75rem; border-bottom: 1px solid var(--line); }
+    .grades thead th { border-bottom: 2px solid var(--ink); }
+    .grades td:last-child, .grades th:last-child { text-align: center; width: 5rem; }
+
+    footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.95rem; border-top: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="wrap">
+      <strong>HATIVAGONE TADIWANASHE</strong>
+      <a href="index.html">&larr; Back to home</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <header>
+      <h1>Education</h1>
+      <p class="intro">My path from secondary school to university.</p>
+    </header>
+
+    <!-- EDIT: replace every school name, year and detail below with your real ones.
+         To add another stage, copy one whole <div class="entry"> block and paste it. -->
+    <div class="timeline">
+
+      <div class="entry">
+        <p class="years">2016 – 2019</p>
+        <h2>Ordinary Level (O-Level)</h2>
+        <p class="school">Nyahuni Adventist High School</p>
+        <!-- EDIT: put your real subjects and grades. Copy a <tr> line to add a subject. -->
+        <div class="table-scroll">
+          <table class="grades">
+            <caption>O-Level results</caption>
+            <thead><tr><th scope="col">Subject</th><th scope="col">Grade</th></tr></thead>
+            <tbody>
+              <tr><td>Mathematics</td><td>A</td></tr>
+              <tr><td>English Language</td><td>A</td></tr>
+              <tr><td>Combined Science</td><td>A</td></tr>
+              <tr><td>Statistics</td><td>A</td></tr>
+              <tr><td>Shona</td><td>A</td></tr>
+              <tr><td>Geography</td><td>A</td></tr>
+              <tr><td>Physics</td><td>B</td></tr>
+              <tr><td>Chemistry</td><td>B</td></tr>
+              <tr><td>Biology</td><td>B</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="entry">
+        <p class="years">2020 – 2021</p>
+        <h2>Advanced Level (A-Level)</h2>
+        <p class="school">Nyahuni Adventist High School</p>
+        <!-- EDIT: put your real subjects and grades. Copy a <tr> line to add a subject. -->
+        <div class="table-scroll">
+          <table class="grades">
+            <caption>A-Level results</caption>
+            <thead><tr><th scope="col">Subject</th><th scope="col">Grade</th></tr></thead>
+            <tbody>
+               <tr><td>Geography</td><td>A</td></tr>
+              <tr><td>Mathematics</td><td>B</td></tr>
+              <tr><td>Physics</td><td>B</td></tr>
+               <tr><td>Statistics</td><td>D</td></tr>
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="entry current">
+        <p class="years">2022 – Present</p>
+        <h2>BEng Computer Engineering</h2>
+        <p class="school">Chinhoyi University of Technology</p>
+        <p class="detail">Currently in Part 4.1. Focus areas include embedded systems, electronics and software. Industrial attachment at the Ministry of ICT.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">&copy; 2026 Hativagone Tadiwanashe.</div>
+  </footer>
+
+</body>
+</html>

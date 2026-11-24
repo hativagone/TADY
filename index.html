@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name</title>
+  <!-- TIP: Everything you should change is marked with "EDIT:" comments. -->
+  <style>
+    :root {
+      --paper: #f3f0e8;
+      --ink: #1d2a2f;
+      --muted: #5d6b70;
+      --accent: #2f6f6a;
+      --line: #cfc9ba;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+    a { color: var(--accent); }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    .wrap { max-width: 680px; margin: 0 auto; padding: 0 1.5rem; }
+
+    nav { padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+    nav .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    nav a { text-decoration: none; margin-right: 1.25rem; }
+    nav a:last-child { margin-right: 0; }
+
+    header { padding: 5rem 0 3rem; }
+    h1 { font-size: clamp(2.6rem, 8vw, 4.2rem); line-height: 1.05; margin: 0 0 1rem; letter-spacing: -0.02em; }
+    .tagline { font-size: 1.3rem; color: var(--muted); margin: 0; }
+
+    section { padding: 2.5rem 0; border-top: 1px solid var(--line); }
+    h2 { font-size: 1.6rem; margin: 0 0 1rem; }
+    .project { margin-bottom: 1.75rem; }
+    .project h3 { margin: 0; font-size: 1.15rem; }
+    .project p { margin: 0.25rem 0 0; color: var(--muted); }
+
+    .contact-btn {
+      display: inline-block; background: var(--accent); color: #fff;
+      padding: 0.7rem 1.4rem; border-radius: 4px; text-decoration: none;
+    }
+    .contact-btn:hover { background: #245955; }
+    footer { padding: 2rem 0 3rem; color: var(--muted); font-size: 0.95rem; border-top: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="wrap">
+      <!-- EDIT: your name -->
+      <strong>HATIVAGONE TADIWANASHE</strong>
+      <div>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <header>
+      <!-- EDIT: your name and a one-line description of what you do -->
+      <h1>Hi, I'm Hativagone Tadiwanashe.</h1>
+      <p class="tagline">I'm a Computer Engineering student at Chinhoyi University Of Technology based in Harare.</p>
+    </header>
+
+    <section id="about">
+      <h2>About me</h2>
+      <!-- EDIT: write 2 or 3 short paragraphs about yourself -->
+      <p>I'm a Computer Engineering student at Chinhoyi University of Technology, currently in Part 4.1.
+         I enjoy understanding how hardware and software work together, from circuits and embedded systems to the code that runs on them.</p>
+<p>Right now I'm exploring vibe coding, using AI tools to turn ideas into working projects while picking up more programming along the way. 
+    I am attached  at the Ministry of ICT.
+    
+    </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <!-- EDIT: change this summary to match your own education -->
+      <p>Currently studying Computer Engineering at Chinhoyi University of Technology. See my full education history from secondary school to university.</p>
+      <a class="contact-btn" href="education.html">View my education</a>
+    </section>
+
+    <section id="work">
+      <h2>Things I've made</h2>
+      <!-- EDIT: replace these with your own projects, or delete the ones you don't need -->
+      <div class="project">
+        <h3>Project one</h3>
+        <p>Personal  website using vibe coding and VSCode.</p>
+      </div>
+      
+    </section>
+
+    <section id="contact">
+      <h2>Get in touch</h2>
+      <p>Want to work together or just say hello?</p>
+      <!-- EDIT: replace with your real email address -->
+      <a class="contact-btn" href="mailto:shumbahartman@gmail.com">Email me</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <!-- EDIT: your name -->
+      &copy; 2026 Hativagone Tadiwanashe.
+    </div>
+  </footer>
+
+</body>
+</html>
